@@ -1,0 +1,41 @@
+create database students_db;
+use  students_db;
+create table students(
+    name varchar(100),
+    rollno varchar(100) primary key,
+    marks int
+);
+show tables;
+
+select* from students;
+drop database students_db ;
+create table admin(
+    username varchar(100),
+    password varchar(20)
+);
+ insert into admin values("vijay","1234");
+ select * from admin;
+ALTER TABLE students ADD skills VARCHAR(255);
+ALTER TABLE students ADD business_idea TEXT;
+delete from students where rollno='83';
+
+
+ALTER TABLE students
+ADD attendance INT;
+
+ALTER TABLE students
+ADD projects INT;
+
+ALTER TABLE students
+ADD communication VARCHAR(20);
+
+ALTER TABLE students
+ADD internships INT;
+
+ALTER TABLE students
+ADD cgpa FLOAT;
+
+ALTER TABLE students
+ADD placement_status VARCHAR(20);
+
+desc students;
